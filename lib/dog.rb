@@ -11,10 +11,13 @@ class Dog
     @@all
   end
   def save
-    @@all  << self
+    @@all << self
   end
   def self.clear_all
     @@all.clear
+  end
+  def self.print_all
+     @@all.each {|element| puts element}
   end
 end
 
